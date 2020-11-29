@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import IndecisionApp from './api/indecision'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-
+        <div id="indecision">
+           <IndecisionApp />
+        </div>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
